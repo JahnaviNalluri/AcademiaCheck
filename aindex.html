@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+   
+    /* Styling for the form container */
+    .container {
+        position: relative;
+        width: 50%;
+        max-width: 400px;
+        background-color: rgba(255, 255, 255, 0.4);
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 20px;
+          }
+    
+    /* Styling for the VVIT background image */
+    .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      
+        filter: blur(3px); 
+           }
+    
+    h2 {
+        font-size: 30px;
+        text-align: center;
+     
+  
+         }
+    
+    /* Styling for form labels */
+    label {
+        font-size: 18px;
+    
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    /* Styling for form inputs */
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+    /* Styling for the login button */
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+         cursor: pointer;
+       
+    }
+    .message {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        font-size:20px;
+        text-align: center;
+         /* Example color */
+    }
+    
+    
+    /* Styling for the login button on hover */
+  
+    /* Styling for the error message */
+   
+    </style>
+    
+    p
+</head>
+<body>
+    <!-- Background image -->
+    <img src="vvit.jpg" alt="VVIT" class="background-image">
+ <div class="message">
+ <p><strong>Vasireddy Venkatadri Institute Of Technology(Autonomous)</strong></p>
+        <p><strong>Academia Check</strong></p>
+    </div>
+ 
+    <div class="container">
+        <h2>Login Here</h2>
+        <form action="login" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="userName" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="userPass" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+           
+        </form>
+    </div>
+     
+     
+</body>
+</html>
